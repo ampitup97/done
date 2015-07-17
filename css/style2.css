@@ -1,0 +1,123 @@
+nav {
+  background-color: #333;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+  width: 100%;
+}
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+nav > ul > li > a {
+    color: white;
+    background-color: #333;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+}
+ ul {
+ list-style-type: none;
+ }
+	
+.card {
+    position: relative;
+    margin:10px;
+    width: 270px;
+    height: 325px;
+    z-index : 0;
+    float:left;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding:5px;
+  border:5px solid #021a40;
+}
+.card {
+    -webkit-perspective: 1000;
+    perspective: 1000;
+  margin-left: 60px;
+}
+.frontpanel {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: all 1.0s linear;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+}
+.card:hover .frontpanel {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.back {
+    display: block;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    color: black;
+    text-align: center;
+  background-color: gray;
+  visibility: visible;
+}
+#textface {
+  color: black;
+  font-size: 100px;
+}
+.container {
+	position: relative;
+  white-space: nowrap;
+  width: 60%;
+  top: 50px;
+  margin: auto;
+}
+<!--
+
+.whatever {
+  width: 200px;
+  display: inline-block;
+  height: 300px;
+  margin: 70px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+.whatever figure {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+
+.whatever .outside {
+  background-color: #faebd7;
+}
+.whotever .inside {
+  transform: rotateY( 180deg );
+  background-color: #faebd7;
+}
+
+.whatever.flipped {
+  transform: rotateY( 180deg );
+}
+
+figure img {
+	width: 75%;
+	margin: 15%;
+} -->
